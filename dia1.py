@@ -1,7 +1,7 @@
 # Advent of Code 2025 - Día uno
 # Vamo a meter las 4000 y la madre de entradas en un TXT y leero con python, que chille
 
-pointer_donde_esta_apuntando_el_coso = 50
+pointer_donde_esta_apuntando_el_coso = 0
 contador_de_cuantas_veces_el_pointer_llego_a_0 = 0
 contador_de_lineas = 0
 
@@ -21,16 +21,15 @@ try:
             # Simulamos el movimiento paso a paso
             for _ in range(pasos):
                 if direccion == "L":
-                    pointer_donde_esta_apuntando_el_coso -= 1
                     # Si baja de 0, va a 99
                     if pointer_donde_esta_apuntando_el_coso < 0:
                         pointer_donde_esta_apuntando_el_coso = 99
+                    pointer_donde_esta_apuntando_el_coso -= 1
                 elif direccion == "R":
-                    pointer_donde_esta_apuntando_el_coso += 1
                     # Si sube de 99, va a 0
                     if pointer_donde_esta_apuntando_el_coso > 99:
                         pointer_donde_esta_apuntando_el_coso = 0
-                
+                    pointer_donde_esta_apuntando_el_coso += 1
                 # Verificamos si el pointer es 0 después del movimiento
                 if pointer_donde_esta_apuntando_el_coso == 0:
                     contador_de_cuantas_veces_el_pointer_llego_a_0 += 1
