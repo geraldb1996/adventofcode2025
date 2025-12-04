@@ -1,7 +1,7 @@
 # Advent of Code 2025 - Día uno
 # Vamo a meter las 4000 y la madre de entradas en un TXT y leero con python, que chille
 
-pointer_donde_esta_apuntando_el_coso = 0
+pointer_donde_esta_apuntando_el_coso = 50
 contador_de_cuantas_veces_el_pointer_llego_a_0 = 0
 contador_de_lineas = 0
 
