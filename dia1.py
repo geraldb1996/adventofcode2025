@@ -43,3 +43,6 @@ except FileNotFoundError:
     print("Error: No se encontró el archivo input.txt")
 except ValueError:
     print("Error: Formato de linea inválido en input.txt")
+
+##La segunda parte era 6496, que era el valor inicial que me estaba dando al principio XD
+##Nomas busqué el resultado anterior en consola
