@@ -7,7 +7,7 @@ contador_de_lineas = 0
 
 # Abrimos el input hijuesumauser
 try:
-    with open("input.txt", "r") as f:
+    with open("Dia1/input.txt", "r") as f:
         for linea in f:
             contador_de_lineas += 1
             linea = linea.strip() # Eliminamos espacios en blanco y saltos de linea
