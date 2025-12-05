@@ -1,4 +1,3 @@
-
 def identificador_epico_de_ids_invalidos(numero):
     """
     Verifica si un número está formado por una secuencia de dígitos repetida dos veces.
@@ -6,7 +5,6 @@ def identificador_epico_de_ids_invalidos(numero):
     """
     s = str(numero)
     n = len(s)
-    
     # Si la longitud es impar, no puede ser una repetición exacta de dos partes iguales
     if n % 2 != 0:
         return False
@@ -18,8 +16,10 @@ def identificador_epico_de_ids_invalidos(numero):
     return parte1 == parte2
 
 def main():
+    suma_total_para_resolver_el_asertijo = 0
+    numeros_concatenados = ""
     try:
-        with open('Dia2/dia2_inputExample.txt', 'r') as f:
+        with open('Dia2/input_dia2.txt', 'r') as f:
             contenido = f.read().strip()
     except FileNotFoundError:
         print("Error: No se encontró el archivo input_dia2.txt")
@@ -42,10 +42,15 @@ def main():
             for num in range(inicio, fin + 1):
                 if identificador_epico_de_ids_invalidos(num):
                     print(num)
+                    suma_total_para_resolver_el_asertijo += num
+                    print(f"keloke, la respuesta es: {suma_total_para_resolver_el_asertijo}")
+                    numeros_concatenados += str(num)
                     
         except ValueError:
             print(f"Error procesando el rango: {rango_str}")
             continue
+
+    print(f"Números concatenados: {numeros_concatenados}")
 
 if __name__ == "__main__":
     main()
