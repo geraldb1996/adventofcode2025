@@ -1,19 +1,21 @@
 def identificador_epico_de_ids_invalidos(numero):
     """
-    Verifica si un número está formado por una secuencia de dígitos repetida dos veces.
-    Ejemplos: 55 (5, 5), 6464 (64, 64), 123123 (123, 123).
+    Verifica si un número está formado por una secuencia de dígitos repetida al menos dos veces.
+    Ejemplos: 12341234 (2 veces), 123123123 (3 veces), 1111111 (7 veces).
     """
     s = str(numero)
     n = len(s)
-    # Si la longitud es impar, no puede ser una repetición exacta de dos partes iguales
-    if n % 2 != 0:
-        return False
     
-    mitad = n // 2
-    parte1 = s[:mitad]
-    parte2 = s[mitad:]
-    
-    return parte1 == parte2
+    # Probar longitudes de subcadena desde 1 hasta n/2
+    for length in range(1, n // 2 + 1):
+        # Si la longitud total no es divisible por la longitud de la subcadena, no puede ser una repetición exacta
+        if n % length == 0:
+            subcadena = s[:length]
+            repeticiones = n // length
+            if subcadena * repeticiones == s:
+                return True
+                
+    return False
 
 def main():
     suma_total_para_resolver_el_asertijo = 0
