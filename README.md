@@ -23,7 +23,7 @@
 *Me costó un poco más, misma técnica de pasar el input a un txt, siguiendo el formato seteamos primer rango y el segundo dividio por guion y el siguiente rango por coma, etc, luego recorremos cada uno para verificar si coincide con las reglas del acertijo*
 
 ## 🎁 Día 3:
-*Pendiente*
+*Siempre tomando el input del txt verificamos cada cadena de números encontrando los 2 que generen el más alto (tomando el primero y el segundo del la cadena restante), después el otro código lo mismo pero admitiendo 12 dígitos*
 
 ## 🎁 Día 4:
 *Pendiente*
