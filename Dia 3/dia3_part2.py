@@ -3,7 +3,7 @@ def solve():
     try:
         # Use absolute path relative to script location for robustness
         script_dir = os.path.dirname(os.path.abspath(__file__))
-        file_path = os.path.join(script_dir, 'input_example.txt')
+        file_path = os.path.join(script_dir, 'dia3_input.txt')
         
         with open(file_path, 'r') as f:
             lines = f.readlines()
