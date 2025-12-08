@@ -11,7 +11,7 @@
 | 01 | ⭐⭐ | EZ |
 | 02 | ⭐⭐| Me costó más |
 | 03 | ⭐⭐| EZ |
-| 04 | | |
+| 04 | ⭐⭐| Voy bien atrasado |
 | 05 | | |
 
 ---
@@ -26,7 +26,7 @@
 *Siempre tomando el input del txt verificamos cada cadena de números encontrando los 2 que generen el más alto (tomando el primero y el segundo del la cadena restante), después el otro código lo mismo pero admitiendo 12 dígitos*
 
 ## 🎁 Día 4:
-*Pendiente*
+*Otro día atrasado, pasamos el input y verificamos cada @, lo convertimos en filas y columnas para calcular las posiciones, luego verificamos si tiene menos de 4 vecinos*
 
 ## 🎁 Día 5:
 *Pendiente*
